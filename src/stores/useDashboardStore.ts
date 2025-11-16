@@ -1,10 +1,6 @@
 import { create } from "zustand";
 import { devtools, persist } from "zustand/middleware";
-import type {
-  DashboardStore,
-  DateRange,
-  SavedView,
-} from "../types/index";
+import type { DashboardStore, DateRange, SavedView } from "../types/index";
 
 const initialDateRange: DateRange = {
   start: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000),
@@ -88,7 +84,10 @@ export const useDashboardStore = create<DashboardStore>()(
         partialize: (state) => ({
           savedViews: state.savedViews,
           filters: state.filters,
-          dateRange: state.dateRange,
+          dateRange: {
+            start: state.dateRange.start.toISOString(),
+            end: state.dateRange.end.toISOString(),
+          },
         }),
       }
     )
