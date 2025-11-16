@@ -216,6 +216,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tailwind CSS](https://tailwindcss.com/)
 
 
-Project Link: [https://github.com/yourusername/data-explorer-app](https://github.com/yourusername/data-explorer-app)
+Project Link: [https://mariandreadelboccio.github.io/data-explorer-app/](https://mariandreadelboccio.github.io/data-explorer-app/)
 
 ---
