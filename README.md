@@ -2,7 +2,6 @@
 
 A modern, production-ready data visualization dashboard built with React, TypeScript, and cutting-edge frontend technologies.
 
-![CI/CD](https://github.com/yourusername/data-explorer-app/workflows/CI/CD%20Pipeline/badge.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue)
 ![React](https://img.shields.io/badge/React-18.2-61dafb)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -16,7 +15,6 @@ A modern, production-ready data visualization dashboard built with React, TypeSc
 - 🚀 **Performance Optimized**: React Query for intelligent caching
 - 🎨 **Modern UI**: Tailwind CSS with responsive design
 - ✅ **Type-Safe**: Full TypeScript coverage
-- 🧪 **Well Tested**: Comprehensive unit and integration tests
 - 🔄 **CI/CD Ready**: GitHub Actions pipeline included
 
 ## 🛠️ Tech Stack
@@ -51,7 +49,7 @@ A modern, production-ready data visualization dashboard built with React, TypeSc
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/data-explorer-app.git
+git clone https://github.com/MariandreaDelBoccio/data-explorer-app.git
 cd data-explorer-app
 
 # Install dependencies
@@ -82,10 +80,9 @@ npm run type-check   # Run TypeScript compiler check
 
 ```
 src/
-├── components/          # Reusable UI components
+├── components/         # Reusable UI components
 │   ├── ui/             # Base components (Button, Card, etc.)
 │   ├── charts/         # Chart components
-│   └── layouts/        # Layout components
 ├── features/           # Feature-based modules
 │   ├── dashboard/      # Main dashboard
 │   ├── filters/        # Filter system
@@ -94,7 +91,6 @@ src/
 ├── services/           # API & business logic
 ├── stores/             # Zustand stores
 ├── types/              # TypeScript definitions
-├── utils/              # Helper functions
 └── __tests__/          # Test files
 ```
 
@@ -109,8 +105,6 @@ src/
 ## 🧪 Testing Strategy
 
 - **Unit Tests**: Individual functions and utilities
-- **Component Tests**: UI component behavior
-- **Integration Tests**: Feature workflows
 - **Store Tests**: State management logic
 
 Run tests with:
@@ -120,15 +114,6 @@ npm run test:coverage     # With coverage
 ```
 
 ## 🔧 Configuration
-
-### Environment Variables
-
-Create a `.env` file:
-
-```env
-VITE_API_BASE_URL=https://api.example.com
-VITE_APP_NAME=Data Explorer
-```
 
 ### Customizing Charts
 
